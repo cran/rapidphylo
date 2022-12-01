@@ -1,0 +1,14 @@
+7a8ab2f30a700a9802ca42913320098e *DESCRIPTION
+7938375d1a26a14f95968ed4618926c6 *NAMESPACE
+912881ce8d86a778f99dafe24e2547ea *NEWS.md
+fcaa4112e7dd01075a23f989142b9c5c *R/BMaf_to_zeroRDD.R
+aa8d3efb56fea88708b86728451392b4 *R/RDM.R
+1e79d3389498b8958cea4f72f4657135 *R/check.equivalence.R
+6d5154566af21d8fe3ee0f12c662c28d *R/data.R
+b936ee2ed95ca515ea22f99f389a784a *R/eliminate.rep.R
+1d60c3668e49fcfcae96aa8cde8aed2c *R/multiphylo.R
+8d62236d9c4859107e8503eb67736ecc *R/topology_to_newick.R
+a963a4b174d6c8fa6da81ed60664690d *R/zeroRDD_to_splits.R
+0e54ef44a53ec199167dd3c55f808a39 *data/Human_Allele_Frequencies.RData
+a3e130133ea23b3713449b76d309e4fa *man/Human_Allele_Frequencies.Rd
+2f1f05fd07b379407c37bc7cfceab65b *man/RDM.Rd
