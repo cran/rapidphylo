@@ -6,7 +6,7 @@
 #'
 #' @param outgroup A variable that can be either the population name or a numerical row number of the outgroup data.
 #' @param use Specify which part of data is used to compute the covariance matrix. The options are "\code{complete.obs}", "\code{pairwise.complete.obs}", "\code{everything}", "\code{all.obs}", and "\code{na.or.complete}". See \code{stats::cov} for more details.
-#' @param mat_allele_freq A \eqn{(P+1) \times L} matrix containing the allele frequencies, where there are \eqn{P} taxa, plus one outgroup, and \eqn{L} loci. \eqn{P} needs to be greater than or equal to 5.
+#' @param mat_allele_freq A \eqn{(P+1) \times L} matrix containing the allele frequencies, where there are \eqn{P} taxa, plus one outgroup, and \eqn{L} loci.
 #'
 #' @return An estimated tree-topology in Newick format.
 #' @export
@@ -15,7 +15,7 @@
 #'
 #' @examples
 #' # A dataset "Human_Allele_Frequencies" is loaded with the package;
-#' # it has allele frequencies in 19,500 sites for
+#' # it has allele frequencies in 44,000 sites for
 #' # 5 human populations and one outgroup human population.
 #'
 #' # check data dimension
@@ -29,11 +29,6 @@
 #'
 RDM<-function(mat_allele_freq,outgroup,
               use=c("complete.obs","pairwise.complete.obs","everything","all.obs","na.or.complete")){
-
-  num_population <- nrow(mat_allele_freq)
-  if (num_population < 6){
-    stop("The total number of populations needs to be at least 6.")
-  }
 
   mat_allele_freq[mat_allele_freq==1]<-0.99
   mat_allele_freq[mat_allele_freq==0]<-0.01

@@ -1,3 +1,13 @@
+# rapidphylo 0.1.1
+
+## Changes 
+
+* `RDM()` now can work with data from 5 populations.
+
+* The example dataset "Human_Allele_Frequencies" now is a 5 × 44,000 matrix
+
 # rapidphylo 0.1.0
 
-* Added a `NEWS.md` file to track changes to the package.
+## Changes
+
+* Initial CRAN release

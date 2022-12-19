@@ -23,15 +23,21 @@ multiphylo<-function(base_tree,label){
     ind4<-which(base_tree[i,]==1)
     ind5<-which(base_tree[i,]==2)
     if (length(ind3)==0){
-      grp1<-label[ind4]
-      if (length(ind4)>1){
+      if (length(ind4)==0 & length(ind5)==0){
+        grp1<-label[-length(label)]
         grp1<-paste("(",paste(grp1,collapse = ","),")",sep = "")
+        grp<-paste("(",outgroup,",",grp1,");",sep="")
+      }else{
+        grp1<-label[ind4]
+        if (length(ind4)>1){
+          grp1<-paste("(",paste(grp1,collapse = ","),")",sep = "")
+        }
+        grp2<-label[ind5]
+        if (length(ind5)>1){
+          grp2<-paste("(",paste(grp2,collapse = ","),")",sep = "")
+        }
+        grp<-paste("(",outgroup,",(",grp1,",",grp2,"));",sep="")
       }
-      grp2<-label[ind5]
-      if (length(ind5)>1){
-        grp2<-paste("(",paste(grp2,collapse = ","),")",sep = "")
-      }
-      grp<-paste("(",outgroup,",",grp1,",",grp2,");",sep="")
     }else{
       grp1<-label[ind4]
       if (length(ind4)>1){
@@ -45,7 +51,7 @@ multiphylo<-function(base_tree,label){
       if (length(ind3)>1){
         grp3<-paste("(",paste(grp3,collapse = ","),")",sep = "")
       }
-      grp<-paste("(",outgroup,",",grp1,",",grp2,",",grp3,");",sep="")
+      grp<-paste("(",outgroup,",(",grp1,",",grp2,",",grp3,"));",sep="")
     }
     tree<-read.tree(text = grp)
     mp<-list(tree)

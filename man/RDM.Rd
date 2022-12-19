@@ -12,7 +12,7 @@ RDM(
 )
 }
 \arguments{
-\item{mat_allele_freq}{A \eqn{(P+1) \times L} matrix containing the allele frequencies, where there are \eqn{P} taxa, plus one outgroup, and \eqn{L} loci. \eqn{P} needs to be greater than or equal to 5.}
+\item{mat_allele_freq}{A \eqn{(P+1) \times L} matrix containing the allele frequencies, where there are \eqn{P} taxa, plus one outgroup, and \eqn{L} loci.}
 
 \item{outgroup}{A variable that can be either the population name or a numerical row number of the outgroup data.}
 
@@ -29,7 +29,7 @@ The input matrix is the observed values of the frequencies at tips \eqn{1, 2, ..
 }
 \examples{
 # A dataset "Human_Allele_Frequencies" is loaded with the package;
-# it has allele frequencies in 19,500 sites for
+# it has allele frequencies in 44,000 sites for
 # 5 human populations and one outgroup human population.
 
 # check data dimension

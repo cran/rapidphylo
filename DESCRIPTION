@@ -2,7 +2,7 @@ Type: Package
 Package: rapidphylo
 Title: Rapidly Estimate Phylogeny from Large Allele Frequency Data
         Using Root Distances Method
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Arindam", "RoyChoudhury", , "arr2014@med.cornell.edu", role = c("aut", "cre", "cph")),
     person("Jing", "Peng", role = "aut"),
@@ -27,6 +27,6 @@ LazyData: true
 LazyDataCompression: xz
 NeedsCompilation: no
 RoxygenNote: 7.2.1
-Packaged: 2022-11-30 15:06:13 UTC; yil4013
+Packaged: 2022-12-19 01:33:11 UTC; yil4013
 Repository: CRAN
-Date/Publication: 2022-12-01 08:00:02 UTC
+Date/Publication: 2022-12-19 13:10:05 UTC
