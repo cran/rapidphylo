@@ -2,7 +2,9 @@
 #'
 #' \code{RDM()} estimates a tree-topology from allele frequencies.
 #'
-#' The input matrix is the observed values of the frequencies at tips \eqn{1, 2, ..., P, P+1}. A logit transformation is performed on the allele frequency data, so that the observed values are approximately normal (The logit transformation of r refers to \eqn{\log\frac{r}{1-r}}). The transformed matrix is converted into a data frame for further analyses.
+#' The input matrix is the observed values of the frequencies at tips \eqn{1, 2, ..., P, P+1}.
+#' A logit transformation is performed on the allele frequency data, so that the observed values
+#' are approximately normal. (The logit transformation of r refers to \eqn{\log\frac{r}{1-r}}.) The transformed matrix is converted into a data frame for further analyses.
 #'
 #' @param outgroup A variable that can be either the population name or a numerical row number of the outgroup data.
 #' @param use Specify which part of data is used to compute the covariance matrix. The options are "\code{complete.obs}", "\code{pairwise.complete.obs}", "\code{everything}", "\code{all.obs}", and "\code{na.or.complete}". See \code{stats::cov} for more details.
@@ -11,12 +13,12 @@
 #' @return An estimated tree-topology in Newick format.
 #' @export
 #'
-#' @references Jing Peng, Haseena Rajeevan, Laura Kubatko, and Arindam RoyChoudhury (2021) \emph{A fast likelihood approach for estimation of large phylogenies from continuous trait data}. Molecular Phylogenetics and Evolution 161 107142.
+#' @references Peng J, Rajeevan H, Kubatko L, and RoyChoudhury A (2021) \emph{A fast likelihood approach for estimation of large phylogenies from continuous trait data}. Molecular Phylogenetics and Evolution 161 107142.
 #'
 #' @examples
 #' # A dataset "Human_Allele_Frequencies" is loaded with the package;
-#' # it has allele frequencies in 44,000 sites for
-#' # 5 human populations and one outgroup human population.
+#' # it has allele frequencies in 31,000 sites for
+#' # 4 human populations and one outgroup human population.
 #'
 #' # check data dimension
 #' dim(Human_Allele_Frequencies)

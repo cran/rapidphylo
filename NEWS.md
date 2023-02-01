@@ -1,3 +1,10 @@
+# rapidphylo 0.1.2
+
+## Changes 
+
+* Update the documentation of `RDM()`
+
+
 # rapidphylo 0.1.1
 
 ## Changes 

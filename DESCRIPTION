@@ -1,8 +1,8 @@
 Type: Package
 Package: rapidphylo
-Title: Rapidly Estimate Phylogeny from Large Allele Frequency Data
+Title: Rapidly Estimates Phylogeny from Large Allele Frequency Data
         Using Root Distances Method
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
     person("Arindam", "RoyChoudhury", , "arr2014@med.cornell.edu", role = c("aut", "cre", "cph")),
     person("Jing", "Peng", role = "aut"),
@@ -16,7 +16,7 @@ Author: Arindam RoyChoudhury [aut, cre, cph],
 Maintainer: Arindam RoyChoudhury <arr2014@med.cornell.edu>
 Description: Rapidly estimates tree-topology from large allele frequency
     data using Root Distances Method, under a Brownian Motion Model. See
-    Jing Peng et al. (2021) <doi:10.1016/j.ympev.2021.107142>.
+    Peng et al. (2021) <doi:10.1016/j.ympev.2021.107142>.
 License: AGPL-3
 URL: https://github.com/ArindamRoyChoudhury/rapidphylo
 BugReports: https://github.com/ArindamRoyChoudhury/rapidphylo/issues
@@ -27,6 +27,6 @@ LazyData: true
 LazyDataCompression: xz
 NeedsCompilation: no
 RoxygenNote: 7.2.1
-Packaged: 2022-12-19 01:33:11 UTC; yil4013
+Packaged: 2023-02-01 16:37:06 UTC; yil4013
 Repository: CRAN
-Date/Publication: 2022-12-19 13:10:05 UTC
+Date/Publication: 2023-02-01 17:30:02 UTC
